@@ -13,4 +13,10 @@ describe('bubbleSort', function(){
     let sorted = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
     assert.deepEqual(sort.bubbleSort(numbers), sorted)
   });
+
+  it('can sort with equals', function(){
+    let numbers = [7, 2, 2, 0, 5, 1, 0, 1]
+    let sorted = [0, 0, 1, 1, 2, 2, 5, 7]
+    assert.deepEqual(sort.bubbleSort(numbers), sorted)
+  });
 });
